@@ -1,0 +1,85 @@
+
+.app {
+  min-height: 100vh;
+  padding: 30px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #e0f2fe, #fce7f3);
+  font-family: Arial, sans-serif;
+}
+
+.header h1 {
+  color: #4338ca;
+  font-size: 36px;
+}
+
+.header p {
+  color: #475569;
+}
+
+.soundbox {
+  max-width: 800px;
+  margin: 35px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px #00000012;
+}
+
+.animal-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.animal-card {
+  padding: 22px 10px;
+  border: 2px solid #e0e7ff;
+  border-radius: 18px;
+  background: #f8fafc;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.animal-card:hover {
+  transform: translateY(-5px);
+  background: #ede9fe;
+  border-color: #818cf8;
+}
+
+.animal-card.selected {
+  background: #ddd6fe;
+  border-color: #7c3aed;
+}
+
+.animal-emoji {
+  display: block;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.message {
+  margin-top: 30px;
+  padding: 18px;
+  background: #eef2ff;
+  color: #4338ca;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+footer {
+  color: #64748b;
+  margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+  .animal-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header h1 {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,6 @@
+node_modules
+npm-debug.log
+.env
+.git
+
+// We don't want to copy local dependencies, private environment files or Git history into the Docker build context.
